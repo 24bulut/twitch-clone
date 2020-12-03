@@ -1,0 +1,57 @@
+@import "variables";
+@import "theme-light";
+@import "theme-dark";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+::selection {
+  background-color: #772ce8;
+  background-color: @color-background-accent;
+  color: #fff;
+  color: @color-text-overlay;
+}
+
+body {
+  background-color: #f7f7f8;
+  font-display: optional;
+  font-family: Inter, Roobert, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: @font-base;
+  overflow: hidden;
+}
+
+.root,
+body,
+html {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+b {
+  font-family: inherit;
+}
