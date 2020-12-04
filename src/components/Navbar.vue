@@ -4,23 +4,16 @@
       <div class="logo">
         <Logo />
       </div>
-      <div class="nav-link">
-        <div>
-          <CustomText tag="p" size="size-5" weight="weight-semibold"
-            >Takip Edilen</CustomText
-          >
-        </div>
-        <div>
-          <CustomText tag="p" size="size-5" weight="weight-semibold"
-            >Gözat</CustomText
-          >
-        </div>
-        <div>
-            <button>
-                <MoreIcon width="2rem" height="2rem"  fill="#000"/>
-            </button>
-        </div>
+      <div class="nav">
+        <NavLink>Takip Edilenler</NavLink>
+        <NavLink>Gözat</NavLink>
       </div>
+        <div>
+          <button class="button-icon">
+            <MoreIcon width="2rem" height="2rem" fill="#000" />
+          </button>
+        </div>
+      
     </div>
     <div class="secondbar"></div>
     <div class="Thirdbar"></div>
@@ -29,15 +22,16 @@
 
 <script>
 import Logo from "./Logo";
-import CustomText from "./CustomText";
+import NavLink from "./NavLink";
+
 import MoreIcon from "../icons/More.svg";
 
 export default {
   name: "Navbar",
   components: {
     Logo,
-    CustomText,
     MoreIcon,
+    NavLink,
   },
 };
 </script>
@@ -54,16 +48,13 @@ export default {
     flex: 1;
     display: flex;
   }
-  .nav-link {
-    display: flex;
-    align-items: center;
-    & > div {
-      padding-right: 1rem;
-      padding-left: 1rem;
-    }
+  .nav{
+      display: flex;
   }
+
   .firstbar {
     justify-content: start;
+    align-items: center;
     .logo {
       padding: 0.5rem;
     }

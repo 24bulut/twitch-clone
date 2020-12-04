@@ -1,13 +1,11 @@
 @import "variables";
 @import "theme-light";
 
-
 @font-face {
   font-family: Roobert;
   src: url("../../public/font/roobert/RoobertTRIAL-Medium.otf");
   font-weight: 400;
 }
-
 
 @font-face {
   font-family: Roobert;
@@ -15,13 +13,11 @@
   font-weight: 700;
 }
 
-
 @font-face {
   font-family: Roobert;
   src: url("../../public/font/roobert/RoobertTRIAL-SemiBold.otf");
   font-weight: 600;
 }
-
 
 * {
   margin: 0;
@@ -75,4 +71,34 @@ h6,
 span,
 b {
   font-family: inherit;
+}
+
+.button-icon {
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  align-items: center;
+  background-color: transparent;
+  background-color: @color-background-button-text-default;
+  border-radius: 0.4rem;
+  border-radius: @border-radius-medium;
+  color: #efeff1;
+  color: @color-fill-button-icon;
+  display: inline-flex;
+  height: 3rem;
+  height: @button-size-default;
+  justify-content: center;
+  user-select: none;
+  width: 3rem;
+  width: @button-size-default;
+}
+
+.button-icon:not(:disabled):hover {
+  background-color: hsla(0, 0%, 100%, 0.2);
+  background-color: @color-background-button-text-hover;
+  color: #efeff1;
+  color: @color-fill-button-icon-hover;
+}
+
+button{
+  outline: 0;
 }
