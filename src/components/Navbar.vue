@@ -42,7 +42,7 @@ export default {
 .navbar {
   height: 50px;
   width: 100%;
-  background-color: aqua;
+  background-color: white;
   display: flex;
   & > div {
     flex: 1;

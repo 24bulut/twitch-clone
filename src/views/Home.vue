@@ -4,7 +4,7 @@
 
 
   <CustomText tag="h1" weight="weight-semibold" size="size-1" >
-      Takip Edilen
+      Deneme
   </CustomText>
   <CustomText tag="h1" weight="weight-bold" size="size-1" >
       Takip Edilen
