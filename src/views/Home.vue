@@ -1,12 +1,15 @@
 <template>
  <div>
-      <CustomText tag="h1" weight="weight-bold" size="size-1">
+
+
+
+  <CustomText tag="h1" weight="weight-semibold" size="size-1" >
       Takip Edilen
   </CustomText>
-  <CustomText tag="h1" weight="weight-bold" >
+  <CustomText tag="h1" weight="weight-bold" size="size-1" >
       Takip Edilen
   </CustomText>
-    <CustomText tag="h1" weight="weight-semibold" size="size-4">
+  <CustomText tag="h1" weight="weight-normal"  size="size-1">
       Takip Edilen
   </CustomText>
     <CustomText tag="h1" size="size-5">

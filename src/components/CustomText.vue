@@ -35,6 +35,18 @@
 
 <style lang="less" scoped>
 @import "../styles/variables";
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+b {
+  font-family: inherit;
+}
+
 .size-base{
     font-size: @font-size-base;
 }
