@@ -5,17 +5,19 @@
         <Logo />
       </div>
       <div class="nav">
-        <NavLink>Takip Edilenler</NavLink>
+        <NavLink>Takip Edilen</NavLink>
         <NavLink>Gözat</NavLink>
       </div>
         <div>
-          <button class="button-icon">
+          <ButtonIcon>
             <MoreIcon width="2rem" height="2rem" fill="#000" />
-          </button>
+          </ButtonIcon>
         </div>
       
     </div>
-    <div class="secondbar"></div>
+    <div class="secondbar">
+      <SearchBar/>
+    </div>
     <div class="Thirdbar"></div>
   </nav>
 </template>
@@ -23,8 +25,9 @@
 <script>
 import Logo from "./Logo";
 import NavLink from "./NavLink";
-
+import ButtonIcon from "./ButtonIcon";
 import MoreIcon from "../icons/More.svg";
+import SearchBar from './SearchBar.vue';
 
 export default {
   name: "Navbar",
@@ -32,6 +35,8 @@ export default {
     Logo,
     MoreIcon,
     NavLink,
+    SearchBar,
+    ButtonIcon
   },
 };
 </script>
@@ -44,6 +49,7 @@ export default {
   width: 100%;
   background-color: white;
   display: flex;
+  border-bottom: 1px solid #ddd;
   & > div {
     flex: 1;
     display: flex;
@@ -58,6 +64,11 @@ export default {
     .logo {
       padding: 0.5rem;
     }
+  }
+  .secondbar{
+    padding-left: 2rem;
+    padding-right: 2rem;
+
   }
 }
 </style>

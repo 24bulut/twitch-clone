@@ -33,7 +33,7 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 62.5%;//10px
 }
 
 ::selection {
@@ -73,32 +73,16 @@ b {
   font-family: inherit;
 }
 
-.button-icon {
-  -ms-user-select: none;
-  -webkit-user-select: none;
-  align-items: center;
-  background-color: transparent;
-  background-color: @color-background-button-text-default;
-  border-radius: 0.4rem;
-  border-radius: @border-radius-medium;
-  color: #efeff1;
-  color: @color-fill-button-icon;
-  display: inline-flex;
-  height: 3rem;
-  height: @button-size-default;
-  justify-content: center;
-  user-select: none;
-  width: 3rem;
-  width: @button-size-default;
-}
-
-.button-icon:not(:disabled):hover {
-  background-color: hsla(0, 0%, 100%, 0.2);
-  background-color: @color-background-button-text-hover;
-  color: #efeff1;
-  color: @color-fill-button-icon-hover;
-}
-
-button{
+button,input,select{
   outline: 0;
 }
+
+.button {
+  font-size: @button-text-default;
+  height: @button-size-default;
+  user-select: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+
