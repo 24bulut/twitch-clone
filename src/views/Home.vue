@@ -18,7 +18,8 @@
     <CustomText tag="h2"  size="size-8">
       Takip Edilen
   </CustomText>
-  
+  <p @click="deneme">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis temporibus vero facilis quia incidunt esse doloribus saepe dolorem. Maiores dignissimos error doloribus inventore debitis ab tempore necessitatibus ipsum voluptas earum.</p>
+
  </div>
 </template>
 
@@ -34,6 +35,11 @@ export default {
         CustomText,
         Button,
         Input
+    },
+    methods:{
+        deneme(){
+            alert("deneme çalıştı ");
+        }
     }
 }
 </script>

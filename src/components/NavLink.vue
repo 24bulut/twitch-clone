@@ -1,9 +1,9 @@
 <template>
-  <div class="nav-link">
+  <a class="nav-link link">
     <CustomText tag="p" size="size-5" weight="weight-semibold"
       ><slot
     /></CustomText>
-  </div>
+  </a>
 </template>
 
 <script>
@@ -20,9 +20,13 @@ export default {
 .nav-link {
   display: flex;
   align-items: center;
+  cursor: pointer;
   & > p {
     padding-right: 1rem;
     padding-left: 1rem;
   }
+}
+.active{
+  border-bottom: 2px solid #772ce8;
 }
 </style>

@@ -5,20 +5,34 @@
         <Logo />
       </div>
       <div class="nav">
-        <NavLink>Takip Edilen</NavLink>
+        <NavLink class="active">Takip Edilen</NavLink>
         <NavLink>Gözat</NavLink>
       </div>
-        <div>
+      <div>
           <ButtonIcon>
             <MoreIcon width="2rem" height="2rem" fill="#000" />
           </ButtonIcon>
-        </div>
-      
+      </div>
     </div>
     <div class="secondbar">
       <SearchBar/>
     </div>
-    <div class="Thirdbar"></div>
+    <div class="thirdbar">
+        <ButtonIcon>
+          <King width="2rem" height="2rem" fill="#000" />
+        </ButtonIcon>
+        <ButtonIcon>
+          <Notification width="2rem" height="2rem" fill="#000" />
+        </ButtonIcon>
+        <ButtonIcon>
+          <Message width="2rem" height="2rem" fill="#000" />
+        </ButtonIcon>
+        <Button>
+          <Bit width="2rem" height="2rem" fill="#000" />Bit Al
+        </Button>
+        <Avatar size="30px"/>
+       
+    </div>
   </nav>
 </template>
 
@@ -26,8 +40,16 @@
 import Logo from "./Logo";
 import NavLink from "./NavLink";
 import ButtonIcon from "./ButtonIcon";
+import Button from "./Button";
+import Avatar from "./Avatar";
 import MoreIcon from "../icons/More.svg";
+import King from "../icons/King.svg";
 import SearchBar from './SearchBar.vue';
+import Message from "../icons/Message.svg";
+import Notification from "../icons/Notification.svg";
+import Bit from "../icons/Bit.svg";
+
+
 
 export default {
   name: "Navbar",
@@ -36,7 +58,13 @@ export default {
     MoreIcon,
     NavLink,
     SearchBar,
-    ButtonIcon
+    King,
+    ButtonIcon,
+    Message,
+    Notification,
+    Button,
+    Bit,
+    Avatar
   },
 };
 </script>
@@ -56,6 +84,7 @@ export default {
   }
   .nav{
       display: flex;
+      height: 100%;
   }
 
   .firstbar {
@@ -69,6 +98,15 @@ export default {
     padding-left: 2rem;
     padding-right: 2rem;
 
+  }
+  .thirdbar{
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1rem;
+    & >  button{
+      margin-left: .5rem;
+      margin-right: .5rem;
+    }
   }
 }
 </style>
