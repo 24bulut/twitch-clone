@@ -22,5 +22,7 @@ export default {
 <style lang="less" scoped >
 img{
     border-radius: 100%;
+    margin-left: 1rem;
+
 }
 </style>

@@ -8,7 +8,7 @@
         <NavLink class="active">Takip Edilen</NavLink>
         <NavLink>Gözat</NavLink>
       </div>
-      <div>
+      <div class="more">
           <ButtonIcon>
             <MoreIcon width="2rem" height="2rem" fill="#000" />
           </ButtonIcon>
@@ -71,8 +71,11 @@ export default {
 
 <style lang="less" scoped>
 @import "../styles/variables";
+@import "../styles/theme-light";
+
 
 .navbar {
+  box-shadow: @shadow-elevation-1 !important;
   height: 50px;
   width: 100%;
   background-color: white;
@@ -85,6 +88,9 @@ export default {
   .nav{
       display: flex;
       height: 100%;
+  }
+  .more{
+    margin-left: 1rem;
   }
 
   .firstbar {
