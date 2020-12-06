@@ -3,7 +3,7 @@
 
 ## vue and less are used.
 
-## [View Demo](https://twitch-clone-chi.vercel.app/)
+## [View Demo]({{<https://twitch-clone-chi.vercel.app/>}})
 
 
 
