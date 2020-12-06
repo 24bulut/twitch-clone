@@ -12,9 +12,7 @@
     <CustomText tag="a" weight="weight-semibold" size="size-1" target="_blank" href="https://github.com/abdurrahimbulut/twitch-clone" >
       Go Git Repository
     </CustomText>
-    <CustomText tag="h1" size="size-5">
-      Takip Edilen
-    </CustomText>
+
     <CustomText tag="h2" size="size-8">
       Abdurrahim Bulut
     </CustomText>
