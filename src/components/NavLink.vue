@@ -1,9 +1,9 @@
 <template>
-  <a class="nav-link link">
+  <router-link :to="to" class="nav-link link">
     <CustomText tag="p" size="size-5" weight="weight-semibold"
       ><slot
     /></CustomText>
-  </a>
+  </router-link>
 </template>
 
 <script>
@@ -13,6 +13,11 @@ export default {
   components: {
     CustomText,
   },
+  props:{
+    to:{
+      type:String
+    }
+  }
 };
 </script>
 
@@ -26,7 +31,7 @@ export default {
     padding-left: 1rem;
   }
 }
-.active{
+.router-link-exact-active{
   border-bottom: 2px solid #772ce8;
 }
 </style>

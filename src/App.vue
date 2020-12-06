@@ -1,9 +1,6 @@
 <template>
   <div id="app">
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div> -->
+
     <Navbar />
     <div class="root">
       <Sidebar />
@@ -33,10 +30,14 @@ export default {
 </script>
 
 <style lang="less">
+@import "./styles/variables";
 .root{
   display: flex;
+  height: @root-height;
+
 }
 main{
+  overflow: auto;
   padding: 3rem;
   flex:1;
 }

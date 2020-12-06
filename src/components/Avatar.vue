@@ -4,7 +4,7 @@
       :height="size"
       :width="size"
       alt="Kullanıcı Profil Resmi"
-      src="https://static-cdn.jtvnw.net/user-default-pictures-uv/dbdc9198-def8-11e9-8681-784f43822e80-profile_image-70x70.png"
+      :src="src"
     />
   </figure>
 </template>
@@ -15,14 +15,16 @@ export default {
     size: {
       type: String,
     },
+    src: {
+      type: String,
+      default: "https://static-cdn.jtvnw.net/user-default-pictures-uv/dbdc9198-def8-11e9-8681-784f43822e80-profile_image-70x70.png"
+    },
   },
 };
 </script>
 
-<style lang="less" scoped >
-img{
-    border-radius: 100%;
-    margin-left: 1rem;
-
+<style lang="less" scoped>
+img {
+  border-radius: 100%;
 }
 </style>

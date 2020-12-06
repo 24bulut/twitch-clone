@@ -5,8 +5,8 @@
         <Logo />
       </div>
       <div class="nav">
-        <NavLink class="active">Takip Edilen</NavLink>
-        <NavLink>Gözat</NavLink>
+        <NavLink to="/" >Takip Edilen</NavLink>
+        <NavLink to="/directory">Gözat</NavLink>
       </div>
       <div class="more">
           <ButtonIcon>
@@ -28,9 +28,9 @@
           <Message width="2rem" height="2rem" fill="#000" />
         </ButtonIcon>
         <Button>
-          <Bit width="2rem" height="2rem" fill="#000" />Bit Al
+          <Bit width="2rem" height="2rem" fill="#000" /> Bit Al
         </Button>
-        <Avatar size="30px"/>
+        <Avatar  size="30px"/>
        
     </div>
   </nav>
@@ -112,6 +112,9 @@ export default {
     & >  button{
       margin-left: .5rem;
       margin-right: .5rem;
+    }
+    figure{
+      margin-left: 1rem;
     }
   }
 }
